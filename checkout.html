@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Drop System</title>
     <link rel="stylesheet" href="./CSS Files/styles.css">
+    <link rel="stylesheet" href="./CSS Files/checkout.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="./CSS Files/checkout.css">
-    <!-- <link rel="stylesheet" href="./cart.css"> -->
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -33,7 +31,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
-        <th scope="col">Cart <span id="myCart">0</span> </th>
+        <a href="./checkout.html"><th scope="col">Cart <span id="myCart">0</span> </th></a>
       </a>
 
 
@@ -74,18 +72,62 @@
   <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-md-7 align-self-start cart-page">
-          <div class="products-container">
-                <div class="product-header">
-                  <h5 class="product-title">PRODUCT</h5>
-                  <h5 class="price">PRICE</h5>
-                  <h5 class="quantity">QUANTITY</h5>
-                  <h5 class="total">TOTAL</h5>
-              </div>
-
-              <div class="cartproducts" id="cartproducts">
-              </div>
-          </div>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/Laptops and Computers/Acer/acer1.jpg" id="acer-cart" alt="">
+                            <div>
+                                <p>Acer Monitor 144hz</p>
+                                <small>Price: ₱20,000</small> <br>
+                                <a class="remove-item" href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td> 
+                        <input type="number" value="1">
+                    </td>
+                    <td>₱20,000</td>
+                </tr>
             
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/Laptops and Computers/Asus/asus1.jpg" id="acer-cart" alt="">
+                            <div>
+                                <p>ASUS ROG STRIX CPU AMD R7-5800X GTX 1650</p>
+                                <small>Price: ₱49,500</small> <br>
+                                <a class="remove-item" href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>₱49,500</td>
+                </tr>
+
+            </table>
+            
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>₱1000</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Fee</td>
+                        <td>₱100</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>₱69,600</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="col-md-4 checkoutform bg-light">
@@ -146,76 +188,55 @@
   </div>
 
 
-
-    <footer class="bg-light">
+      <!-- FOOTER NEW-->
+      <hr>
+      <footer>
         <div class="container1">
-            <div class="row d-inline-flex w-100 justify-content-center text-center">
-                <div class="col col-md-3 policy">
-                    <a href="termandconditions.html">Terms & Conditions</a>
-                </div>
+          <div class="row d-inline-flex w-100 justify-content-center text-center bg-light">
+              <div class="col col-md-3 product-footer">
+                  <a href="#">Terms & Conditions</a>
+              </div>
+  
+              <div class=" col col-md-3 product-footer">
+                  <a href="#">About Us</a>
+              </div>
+  
+              <div class=" col col-md-3 product-footer">
+                  <a href="#">Support Policy</a>
+              </div>
+  
+              <div class=" col col-md-3 product-footer">
+                  <a href="#">Privacy Policy</a>
+              </div>
+          </div>
+      </div>
     
-                <div class="col col-md-3 policy">
-                    <a href="About Us.html" target="_blank">About Us</a>
-                </div>
-
-                <div class="col col-md-3 policy">
-                    <a href="Supportpolicy.html">Support Policy</a>
-                </div>
-    
-                <div class="col col-md-3 policy">
-                    <a href="privacypolicy.html">Privacy Policy</a>
-                </div>
-            </div>
-        </div> <hr>
-
-
-        <div class="container">
-            <div class="row d-inline-flex w-100 gy-5" id="footer-container" style="padding-top: 30px;">
-                <div class="col-md-4 footer-logo">
-                    <img src="./images/Logo/logo.png">
-                    <div class="input-group mb-3" style="padding-top: 20px;">
-                        <input type="text" class="form-control" placeholder="Message us" aria-label="Message us" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button">Send</button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-5 col-md-4 col-cx-over">
-                    <h5>Contact Info</h5>
-                    <p class="contact-info"><img src="./images/Logo/pin.png" style="height: 20px"> Address: Manila, Philippines</p>
-                    <p class="contact-info"><img src="./images/Logo/phone.png" style="height: 20px"> Phone: +6391234567890</p>
-                    <p class="contact-info"><img src="./images/Logo/email.png" style="height: 17px"> Email: smartdrop@gmail.com</p>
-                </div>
-                <div class="col-lg-2 col-md-4 col-cx-over" id="footer-account">
-                    <h5>My Account</h5>
-                    <a href="">Login</a><br>
-                    <a href="">Order History</a><br>
-                    <a href="">Track Order</a><br>
-                    <a href="">Shipping Policy</a><br>
-                    <a href="">Be an affiliate partner</a>
-                </div>
-            </div><hr>
-            </div> <hr>
-
-            
-    </footer>
-    
-   
-    <div class="container">
+      </footer> <hr>
+  
+      <div class="container-fluid w-100">
         <div class="row justify-content-between">
             <div class="col-auto mr-auto">
-                <p>&copy; 2023 Smart Drop by KodeGo Batch - WD52P | Group 2</p>
+                <p class="fst-italic">&copy; 2023 Smart Drop</p>
             </div>
         
             <div class="col-auto mr-auto">
-                <img src="./images/Payments/mastercard.png">
-                <img src="./images/Payments/visa.png">
-                <img src="./images/Payments/maya.png">
+                <p class="fst-italic text-secondary">All Rights Reserved.</p>
             </div>
         </div>
      </div>
 
-
-     <script src="./JS Files/checkout.js"></script>
+         <!-- MODAL FORMS -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header bg-black">
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+              <div class="modal-body bg-black">
+                <!-- CONTENT HERE -->
+                <iframe src="https://script.google.com/macros/s/AKfycbxecunSLsdqy1feqceaRub8KFvZCC288PvLkZmD7-ahKDePy2nKLf2KJmrpXlz412PQ-w/exec" frameborder="0" width="100%" height="605px" style="overflow-y: hidden;"></iframe>
+              <!-- MODAL FORMS -->
+  
 </body>
 </html>
