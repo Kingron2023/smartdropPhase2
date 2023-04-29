@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Drop System</title>
+    <link rel="stylesheet" href="./CSS Files/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/Logo/logo.png" alt="Logo" width="100" height="48">
+      </a>
+
+      <!-- Button trigger modal -->
+      <div class="d-grid gap-2 d-inline-flex me-md-3">
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" >
+            <img src="./images/Logo/login.png " alt="login" width="37" height="37" >
+        </a>
+      </div>
+
+      <a href="#"class="text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        <a href="./checkout.html"><th scope="col">Cart <span id="myCart">0</span> </th></a>
+      </a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid">
+       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end">
+                <li><button class="dropdown-item" type="button"><a href="./agriMachines.html">Agricultural Machineries</a></button></li>
+                <li><button class="dropdown-item" type="button"><a href="./laptopscomputer.html">Laptops and Computers</a></button></li>
+                <li><button class="dropdown-item" type="button" ><a href="./tools&Equipments.html">Tools and Equipments</a></button></li>
+                <li><button class="dropdown-item" type="button" ><a href="./mobile&gadgets.html">Mobile and Gadgets</a></button></li>
+                <li><button class="dropdown-item" type="button" ><a href="./home&living.html">Home and Living</a></button></li>
+                <li><button class="dropdown-item" type="button" ><a href="./womensapparel.html">Women's Apparel </a></button></li>
+                <li><button class="dropdown-item" type="button" ><a href="./mensapparel.html">Men's Apparel</a></button></li>
+              </ul>
+          </li>
+         
+
+          <div class="nav-item container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control form-control-sm me-1" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><b>Search</b></button>
+            </form>
+            
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+
+ <div class="breadcrumb-group">
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Categories</a></li>
+        <li class="breadcrumb-item">Laptops and Computers</li>
+      </ol>
+    </nav>
+</div>
+
+
+    <!-- category Area -->
+    <div class="categoryName">
+      <h3> Laptops and Computers</h3>
+  </div>
+  
+  <div class="container">
+      <div class="categories">
+  
+          <div class="products">
+              <a href="#" class="add-cart cart9"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+              <a href="./productInfoHTML/cat1_ProductInfoPage1.html"><img class="image1" src="./images/Laptops and Computers/Acer/acer1.jpg" alt="acer1.jpg"></a>
+              <div class="overlay">
+                  <div class="text">
+                      <h6><a href="./productInfoHTML/cat1_ProductInfoPage1.html">AFFORDABLE COMPUTER<br> WITH Acer LED Monitor</a></h6>
+                      <h6 class="price">₱20,000 </h6>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="products">
+              <a href="#" class="add-cart cart10"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <a href="./productInfoHTML/cat1_ProductInfoPage2.html"><img class="image1" src="./images/Laptops and Computers/Asus/asus1.jpg" alt="asus1.jpg"></a>                
+              <div class="overlay">
+                  <div class="text">
+                      <h6><a href="./productInfoHTML/cat1_ProductInfoPage2.html">ASUS ROG STRIX CPU AMD R7-5800X GTX 1650</a></h6>
+                      <h6 class="price">₱49,500</h6>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="products">
+              <a href="#" class="add-cart cart11"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <a href="./productInfoHTML/cat1_ProductInfoPage3.html"><img class="image1" src="./images/Laptops and Computers/Dell/dell1.jpg" alt="dell1.jpg"></a>                
+            <div class="overlay">
+                <div class="text">
+                    <h6><a href="./productInfoHTML/cat1_ProductInfoPage3.html">Dell OptiPlex Intel Core i5-4590 8GB RAM, 120gb SSD</a></h6>
+                    <h6 class="price">₱4,450</h6>
+                </div>
+            </div>
+        </div>
+  
+        <div class="products">
+          <a href="#" class="add-cart cart12"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <a href="./productInfoHTML/cat1_ProductInfoPage4.html"><img class="image1" src="./images/Laptops and Computers/Hp/hp1.jpg" alt="hp1.jpg"></a>                
+               <div class="overlay">
+                  <div class="text">
+                      <h6><a href="./productInfoHTML/cat1_ProductInfoPage4.html">HP Desktop Unit ProDesk Desktop Unit </a></h6>
+                      <h6 class="price">₱3,100</h6>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="products">
+              <a href="#" class="add-cart cart13"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <a href="./productInfoHTML/cat1_ProductInfoPage5.html"><img class="image1" src="./images/Laptops and Computers/Lenovo/lenovo1.jpg" alt="lenovo1.jpg"></a>                
+            <div class="overlay">
+                <div class="text">
+                    <h6><a href="./productInfoHTML/cat1_ProductInfoPage5.html">Desktop Computer Set Lenovo with Monitor</a></h6>
+                    <h6 class="price">₱3,517 </h6>
+                </div>
+            </div>
+        </div>
+  
+        <div class="products">
+          <a href="#" class="add-cart cart14"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <a href="./productInfoHTML/cat1_ProductInfoPage6.html"><img class="image1" src="./images/Laptops and Computers/Mac/mac1.jpg" alt="mac1.jpg"></a>                
+            <div class="overlay">
+                <div class="text">
+                    <h6><a href="./productInfoHTML/cat1_ProductInfoPage6.html">Apple Office Design Game Home Desktop Computer</a></h6>
+                    <h6 class="price">₱63,500</h6>
+                </div>
+            </div>
+        </div>
+  
+        <div class="products">
+          <a href="#" class="add-cart cart15"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+          <a href="./productInfoHTML/cat1_ProductInfoPage7.html"><img class="image1" src="./images/Laptops and Computers/Msi/msi1.jpg" alt="msi1.jpg"></a>                
+          <div class="overlay">
+              <div class="text">
+                  <h6><a href="./productInfoHTML/cat1_ProductInfoPage7.html">Msi Mpg Velox 100R - Supports ATX / PC Case</a></h6>
+                  <h6 class="price">₱5,950</h6>
+              </div>
+          </div>
+      </div>
+  
+      <div class="products">
+          <a href="#" class="add-cart cart16"><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+          <a href="./productInfoHTML/cat1_ProductInfoPage8.html"><img class="image1" src="./images/Laptops and Computers/Samsung/samsung1.jpg" alt="samsung1.jpg"></a>                
+              <div class="overlay">
+                <div class="text">
+                    <h6><a href="./productInfoHTML/cat1_ProductInfoPage8.html">Samsung Chromebook 4 Platinum Gray </a></h6>
+                    <h6 class="price">₱8,295</h6>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+    
+     <!-- FOOTER NEW-->
+     <hr>
+    <footer>
+      <div class="container1">
+        <div class="row d-inline-flex w-100 justify-content-center text-center bg-light">
+            <div class="col col-md-3 product-footer">
+                <a href="termandconditions.html">Terms & Conditions</a>
+            </div>
+
+            <div class=" col col-md-3 product-footer">
+                <a href="About Us.html">About Us</a>
+            </div>
+
+            <div class=" col col-md-3 product-footer">
+                <a href="Supportpolicy.html">Support Policy</a>
+            </div>
+
+            <div class=" col col-md-3 product-footer">
+                <a href="privacypolicy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+  
+    </footer> <hr>
+    <div class="container-fluid w-100">
+      <div class="row justify-content-between">
+          <div class="col-auto mr-auto">
+              <p class="fst-italic">&copy; 2023 Smart Drop by KodeGo Batch - WD52P | Group 2</p>
+          </div>
+      
+          <div class="col-auto mr-auto">
+              <p class="fst-italic text-secondary">All Rights Reserved.</p>
+          </div>
+      </div>
+   </div>
+ 
+
+    <!-- MODAL FORMS -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body bg-black">
+            <!-- CONTENT HERE -->
+            <iframe src="https://script.google.com/macros/s/AKfycbzCi_VjgHbIOzrNaFppLsK4585QknczCjRVAluXorPS3cG0nrPQ7mgPoBX380Y-Ur8KtA/exec" frameborder="0" width="100%" height="614px"></iframe>
+          <!-- MODAL FORMS -->
+
+    <script src="./JS Files/Laptops&Computers.js"></script>
+</body>
+</html>
